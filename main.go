@@ -61,6 +61,12 @@ func convertFancy(text string) string {
 		// Range returns a rune (which is the ASCII representation of the char)
 		// We have to convert it to a string if we want the char based value
 		// fmt.Println(string(char), "--->", fancyLetters[string(char)])
+		_, ok := fancyLetters[string(char)]
+		if !ok {
+			// Could not find key in map
+			err := errors.New("convertFancy: could not find key '" + string(char) + "' in map")
+			log.Fatal(err)
+		}
 		fancyText += fancyLetters[string(char)]
 	}
 
