@@ -28,7 +28,7 @@ func help() error {
 func convertFancy(text string) string {
 	var fancyText string
 	fancyLetters := map[string]string{
-		"a": "4",
+		"a": "@",
 		"b": "8",
 		"c": "c",
 		"d": "d",
@@ -36,10 +36,10 @@ func convertFancy(text string) string {
 		"f": "f",
 		"g": "g",
 		"h": "h",
-		"i": "1",
+		"i": "!",
 		"j": "j",
 		"k": "k",
-		"l": "l",
+		"l": "1",
 		"m": "m",
 		"n": "n",
 		"o": "0",
@@ -48,7 +48,7 @@ func convertFancy(text string) string {
 		"r": "r",
 		"s": "s",
 		"t": "t",
-		"u": "u",
+		"u": "û",
 		"v": "v",
 		"w": "w",
 		"x": "x",
